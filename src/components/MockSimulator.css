@@ -1,0 +1,218 @@
+.simulator-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sim-progress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sim-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sim-dot.active {
+  background: var(--accent-saffron);
+  box-shadow: 0 0 8px var(--accent-saffron);
+}
+
+.sim-screen-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.sim-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center-content p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.text-muted { color: var(--text-muted); }
+.text-success { color: var(--success-green-light); }
+.mb-4 { margin-bottom: 1rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.font-bold { font-weight: bold; }
+
+/* Interactive EVM Styles */
+.evm-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.evm-machine {
+  background: #E5E5E5;
+  border: 6px solid #999;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.evm-row-interactive {
+  display: flex;
+  align-items: center;
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 8px;
+  color: #000;
+}
+
+.c-number {
+  width: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.c-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.c-party {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.c-symbol {
+  font-size: 1.8rem;
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.c-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #222;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.evm-light {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #550000;
+  border: 1px solid #330000;
+}
+
+.evm-blue-btn {
+  width: 36px;
+  height: 24px;
+  border-radius: 4px;
+  background: #0066CC;
+  border: none;
+  border-bottom: 4px solid #004488;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.evm-blue-btn:active {
+  border-bottom-width: 0px;
+  transform: translateY(4px);
+  background: #0055AA;
+}
+
+/* Large VVPAT for step 3 */
+.vvpat-machine-large {
+  background: #D9D9D9;
+  border: 8px solid #666;
+  border-radius: 12px;
+  width: 220px;
+  height: 280px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.vvpat-window-large {
+  width: 140px;
+  height: 180px;
+  background: #111;
+  border: 4px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.vvpat-slip-large {
+  background: #FFF;
+  width: 110px;
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slip-no {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.slip-name {
+  font-size: 1rem;
+  font-weight: bold;
+  border-top: 1px dashed #CCC;
+  border-bottom: 1px dashed #CCC;
+  padding: 5px 0;
+}
+
+.slip-symbol {
+  font-size: 2.5rem;
+}
+
+.timer-badge {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
